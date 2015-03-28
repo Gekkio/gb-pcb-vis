@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../dist/gb-pcb-vis.css">
+</head>
+<body>
+<div id="test">
+  <script src="../dist/gb-pcb-vis.js"></script>
+  <gbpcbvis>
+    <noscript>
+      <a href="DMG-TRA-1.DMG-TR-SCN-1.front.jpg">
+      <img width="400" src="DMG-TRA-1.DMG-TR-SCN-1.front.small.jpg">
+      </a>
+      <a href="DMG-TRA-1.DMG-TR-SCN-1.back.jpg">
+      <img width="400" src="DMG-TRA-1.DMG-TR-SCN-1.back.small.jpg">
+      </a>
+    </noscript>
+  </gbpcbvis>
+  <script>
+    gbPcbVis.mount('gbpcbvis', {
+      connections: gbPcbVis.connections.cartridge,
+      images: [{
+        thumb: 'DMG-TRA-1.DMG-TR-SCN-1.front.small.jpg',
+        href: 'DMG-TRA-1.DMG-TR-SCN-1.front.jpg',
+        svg: 'DMG-TRA-1.DMG-TR-SCN-1.front.svg'
+      }, {
+        thumb: 'DMG-TRA-1.DMG-TR-SCN-1.back.small.jpg',
+        href: 'DMG-TRA-1.DMG-TR-SCN-1.back.jpg',
+        svg: 'DMG-TRA-1.DMG-TR-SCN-1.back.svg'
+      }]
+    });
+  </script>
+</div>
+</body>
+</html>
