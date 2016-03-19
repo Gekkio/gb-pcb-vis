@@ -1,7 +1,7 @@
-gbpcbvis {
+.gbpcbvis {
   display: block;
 }
-gbpcbvis .connections {
+.gbpcbvis .connections {
   border: 1px solid #AFD1FF;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -11,44 +11,44 @@ gbpcbvis .connections {
   list-style: none;
   display: inline-block;
 }
-gbpcbvis li {
+.gbpcbvis li {
   cursor: pointer;
   display: inline-block;
   padding: 3px 5px;
 }
-gbpcbvis .hovering {
+.gbpcbvis .hovering {
   background-color: #ff00ff;
   background-color: rgba(255, 0, 255, 0.5);
 }
-gbpcbvis .selected {
+.gbpcbvis .selected {
   background-color: #0000ff;
   background-color: rgba(0, 0, 255, 0.5);
 }
-gbpcbvis .hovering.selected {
+.gbpcbvis .hovering.selected {
   background-color: #000080;
   background-color: rgba(0, 0, 120, 0.5);
 }
-gbpcbvis-svg {
+.gbpcbvis-svg {
   display: inline-block;
 }
-gbpcbvis-svg.small {
+.gbpcbvis-svg.small {
   width: 400px;
 }
-gbpcbvis-svg.large {
+.gbpcbvis-svg.large {
   width: 800px;
 }
-gbpcbvis-svg #pcb-connections > g {
+.gbpcbvis-svg #pcb-connections > g {
   cursor: pointer;
   opacity: 0.0;
 }
-gbpcbvis-svg #pcb-connections > g[data-hovering] {
+.gbpcbvis-svg #pcb-connections > g[data-hovering] {
   fill: #ff00ff;
   opacity: 1.0;
 }
-gbpcbvis-svg #pcb-connections > g[data-selected] {
+.gbpcbvis-svg #pcb-connections > g[data-selected] {
   fill: #0000ff;
   opacity: 1.0;
 }
-gbpcbvis-svg #pcb-connections > g[data-hovering][data-selected] {
+.gbpcbvis-svg #pcb-connections > g[data-hovering][data-selected] {
   fill: #000080;
 }

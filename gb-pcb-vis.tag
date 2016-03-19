@@ -53,14 +53,14 @@
         onclick={ parent.onConnectionClick }>{ name }</li></ul>
   </div>
 
-  <div if={ loaded } class="images"><gbpcbvis-svg
+  <div if={ loaded } class="images"><div data-is="gbpcbvis-svg"
       each={ svgs }
       svg={ svg }
-      class={ parent.size }
+      class={ "gbpcbvis-svg " + parent.size }
       connections={ parent.connections }
       onclick={ parent.onSvgClick }
       onmouseover={ parent.onSvgMouseover }
-      onmouseout={ parent.onSvgMouseout }></gbpcbvis-svg></div>
+      onmouseout={ parent.onSvgMouseout }></div></div>
 
   <div if={ !loaded } class="placeholders">
     <a each={ images } href={ href }>

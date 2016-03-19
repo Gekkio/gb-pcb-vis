@@ -7,7 +7,7 @@
 <body>
 <div id="test">
   <script src="../dist/gb-pcb-vis.js"></script>
-  <gbpcbvis>
+  <div data-is="gbpcbvis" class="gbpcbvis">
     <noscript>
       <a href="DMG-TRA-1.DMG-TR-SCN-1.front.jpg">
       <img width="400" src="DMG-TRA-1.DMG-TR-SCN-1.front.small.jpg">
@@ -16,7 +16,7 @@
       <img width="400" src="DMG-TRA-1.DMG-TR-SCN-1.back.small.jpg">
       </a>
     </noscript>
-  </gbpcbvis>
+  </div>
   <script>
     gbPcbVis.mount('gbpcbvis', {
       connections: gbPcbVis.connections.cartridge,
