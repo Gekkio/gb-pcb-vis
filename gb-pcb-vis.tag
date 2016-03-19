@@ -1,19 +1,18 @@
-var _ = {
-  forEach: require('lodash.foreach'),
-  values: require('lodash.values')
-};
-var request = require('superagent');
-
-function setBooleanAttribute(el, attrName, value) {
-  if (value) {
-    el.setAttribute(attrName, '');
-  } else {
-    el.removeAttribute(attrName);
-  }
-}
-
 <gbpcbvis-svg>
   <script>
+    var _ = {
+      forEach: require('lodash.foreach'),
+    };
+    var request = require('superagent');
+
+    function setBooleanAttribute(el, attrName, value) {
+      if (value) {
+        el.setAttribute(attrName, '');
+      } else {
+        el.removeAttribute(attrName);
+      }
+    }
+
     this.connections = opts.connections;
     this.on('mount', function() {
       var self = this;
@@ -71,6 +70,11 @@ function setBooleanAttribute(el, attrName, value) {
   <button if={ !loaded } onclick={ load }>Load interactive PCB visualization</button>
 
   <script>
+    var _ = {
+      forEach: require('lodash.foreach'),
+      values: require('lodash.values')
+    };
+
     this.prefix = opts.prefix;
     this.loaded = false;
     this.images = opts.images;
